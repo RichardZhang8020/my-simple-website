@@ -2,7 +2,7 @@
   "name": "my-simple-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://richardzhang8020.github.io/my-simple-website",
+  "homepage": "https://richardzhang8020.github.io/my-simple-website",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
