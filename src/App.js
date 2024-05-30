@@ -5,7 +5,7 @@ import AboutPage from './AboutPage';
 
 function App() {
   return (
-    <Router>  
+    <Router basename={process.env.PUBLIC_URL}>  
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -13,7 +13,5 @@ function App() {
     </Router>
   );
 }
-
-// basename={process.env.PUBLIC_URL} HUH?
 
 export default App;
