@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Add padding for a bigger hit area */
+    transition: color 3.0s ease-in-out;
+    transition: background-color 0.3s ease-in-out;  /*ease-in-out needs to be in the parent, if you put this in the hover section, it will not work. I guess its because only the actual element has the power to ease out*/
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555; /* Change background on hover */
+    color: #f0f0f0; /* Lighter text color for contrast */
+    text-decoration: underline;
+    text-decoration-color: #007bff; /* Blue underline */
+    color: #9ed8c3; /* text color on hover */
+  }
