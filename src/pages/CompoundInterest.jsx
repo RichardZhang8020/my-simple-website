@@ -1,94 +1,63 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 
-const CompoundInterest = () => {
+function CompoundInterest(){
+  // Set up the data
   const principal = 10000;
   const interestRate = 0.05;
   const years = 20;
-  const svfRef = useRef();
+  const data = [];
+
+  for (let i = 0; i <= years; i++) {
+    const amount = principal * (1 + interestRate) ** i;
+    data.push({ year: i, amount: amount });
+  }
+
+  const svgRef = useRef();
 
   useEffect(() => {
-    // Set dimensions and margins for the chart
+    const xScale = d3.scaleBand()
+  .domain(data.map((d) => d.year))
+  .range([0, 500])
+  .padding(0.2);
 
-const margin = { top: 70, right: 30, bottom: 40, left: 80 };
-const width = 1200 - margin.left - margin.right;
-const height = 500 - margin.top - margin.bottom;
+const yScale = d3.scaleLinear()
+  .domain([0, d3.max(data, (d) => d.amount)])
+  .range([300, 0]);
 
-// Set up the x and y scales
+// Set up the axes
+const xAxis = d3.axisBottom(xScale);
+const yAxis = d3.axisLeft(yScale);
 
-const x = d3.scaleTime()
-  .range([0, width]);
+// Set up the graph
+const graph = d3.select(svgRef.current)
+  .append('svg')
+  .attr('width', 500)
+  .attr('height', 300)
+  .append('g')
+  .attr('transform', `translate(50, 50)`);
 
-const y = d3.scaleLinear()
-  .range([height, 0]);
+// Add the axes
+graph.append('g')
+  .attr('class', 'x-axis')
+  .call(xAxis);
 
-// Create the SVG element and append it to the chart container
+graph.append('g')
+  .attr('class', 'y-axis')
+  .call(yAxis);
 
-const svg = d3.select("#chart-container")
-  .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+// Add the bars
+graph.selectAll('rect')
+  .data(data)
+  .enter()
+  .append('rect')
+  .attr('x', (d) => xScale(d.year))
+  .attr('y', (d) => yScale(d.amount))
+  .attr('width', xScale.bandwidth())
+  .attr('height', (d) => 300 - yScale(d.amount));
+  }, [data]); // Re-render if data changes
 
-// Create a fake dataset
-
-const dataset = [
-  { date: new Date("2022-01-01"), value: 200 },
-  { date: new Date("2022-02-01"), value: 250 },
-  { date: new Date("2022-03-01"), value: 180 },
-  { date: new Date("2022-04-01"), value: 300 },
-  { date: new Date("2022-05-01"), value: 280 },
-  { date: new Date("2022-06-01"), value: 220 },
-  { date: new Date("2022-07-01"), value: 300 },
-  { date: new Date("2022-08-01"), value: 450 },
-  { date: new Date("2022-09-01"), value: 280 },
-  { date: new Date("2022-10-01"), value: 600 },
-  { date: new Date("2022-11-01"), value: 780 },
-  { date: new Date("2022-12-01"), value: 320 }
-];
-
-// Define the x and y domains
-
-x.domain(d3.extent(dataset, d => d.date));
-y.domain([0, d3.max(dataset, d => d.value)]);
-
-// Add the x-axis
-
-svg.append("g")
-  .attr("transform", `translate(0,${height})`)
-  .call(d3.axisBottom(x)
-    .ticks(d3.timeMonth.every(1)) 
-    .tickFormat(d3.timeFormat("%b %Y"))); 
-
-
-// Add the y-axis
-
-svg.append("g")
-  .call(d3.axisLeft(y))
-
-// Create the line generator
-
-const line = d3.line()
-  .x(d => x(d.date))
-  .y(d => y(d.value));
-
-// Add the line path to the SVG element
-
-svg.append("path")
-  .datum(dataset)
-  .attr("fill", "none")
-  .attr("stroke", "steelblue")
-  .attr("stroke-width", 1)
-  .attr("d", line);
-  });
-
-  return (
-    <div id="compound-interest-graph">
-      <h1>Compound Interest Graph</h1>
-      <svg ref={svfRef}></svg>
-    </div>
-  );
-};
+  return <svg ref={svgRef} />;
+}
 
 export default CompoundInterest;

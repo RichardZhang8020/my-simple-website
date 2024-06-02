@@ -1,5 +1,6 @@
 import React from 'react';
 import SimpleLineChart from '../LineChart';
+import { Link} from 'react-router-dom'
 import CompoundInterest from './CompoundInterest';
 
 function Math() {
@@ -16,9 +17,9 @@ function Math() {
       <a href="https://richardzhang8020.github.io/lawOfLargeNumbers/" style={{ textDecoration: 'none' }}>
         <b>Law of Large Numbers visualization</b>
       </a>
+      <Link to="/compoundInterest">Compound Interest</Link>
       {/* <SimpleLineChart data={chartData} /> */}
-
-      <CompoundInterest/>
+      
       {/* <LineChart/> */}
     </div>
   );

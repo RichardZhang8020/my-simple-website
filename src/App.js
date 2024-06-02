@@ -5,7 +5,8 @@ import Math from './pages/Math';
 import Algorithms from './pages/Algorithms';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
-import Navbar from './Navbar';
+import CompoundInterest from './pages/CompoundInterest';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/algorithms" element={<Algorithms />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/compoundInterest" element={<CompoundInterest />} />
       </Routes>
     </Router>
   );
