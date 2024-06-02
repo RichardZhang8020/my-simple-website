@@ -1,0 +1,4 @@
+.links {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks elements vertically */
+}
