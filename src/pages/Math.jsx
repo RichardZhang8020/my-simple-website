@@ -1,14 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import SimpleLineChart from '../LineChart';
+import CompoundInterest from './CompoundInterest';
 
-function AboutPage() {
+function Math() {
+  const chartData = [
+    { x: 1, y: 5 },
+    { x: 2, y: 8 },
+    { x: 3, y: 3 },
+    { x: 4, y: 12 },
+  ];
+  
+  // In your React component:
   return (
     <div>
-      <h1>MATHHHH  Page</h1>
-      <Link to="/">Go to Home Page</Link>
-      <h1>DELETE</h1>
+      <a href="https://richardzhang8020.github.io/lawOfLargeNumbers/" style={{ textDecoration: 'none' }}>
+        <b>Law of Large Numbers visualization</b>
+      </a>
+      {/* <SimpleLineChart data={chartData} /> */}
+
+      <CompoundInterest/>
+      {/* <LineChart/> */}
     </div>
   );
 }
 
-export default AboutPage;
+export default Math;
