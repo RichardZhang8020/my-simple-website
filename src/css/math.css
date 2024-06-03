@@ -2,3 +2,8 @@
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Stacks elements vertically */
 }
+
+.links > * { /* Target all direct child elements */
+    margin-top: 3px; /* Add spacing between elements */
+    margin-bottom: 3px; /* Add spacing between elements */
+}

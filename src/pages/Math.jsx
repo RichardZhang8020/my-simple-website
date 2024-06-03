@@ -3,7 +3,6 @@ import { Link} from 'react-router-dom'
 import '../css/math.css'; 
 
 function Math() {
-  
   return (
     <div className='links'>
       <a href="https://richardzhang8020.github.io/lawOfLargeNumbers/" style={{ textDecoration: 'none' }}>
