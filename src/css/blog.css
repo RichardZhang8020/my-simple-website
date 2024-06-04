@@ -1,0 +1,46 @@
+.post {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks elements vertically */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1 {
+    margin-bottom: 0px; /* Reduce bottom margin */
+    padding-bottom: 0px; /* Reduce bottom padding */
+}
+
+.date{
+    margin-top: 0px; 
+    padding-top: 0px; 
+}
+
+blockquote {
+    margin: 20px 0; /* Add space above and below the quote */
+    padding: 10px; /* Add padding within the quote */
+    border-left: 5px solid #ccc; /* Add a left border for visual separation */
+    font-style: italic; /* Italicize the quote text (optional) */
+    margin-top: 0px;
+}
+
+.centered-text {
+    text-align: center; /* Center the text horizontally */
+    font-family: Arial, sans-serif; /* Choose a nice font family */
+    font-weight: bold; /* Make the text bold for emphasis */
+    margin: 1.5rem auto; /* Add some margin for spacing */
+    /* Optional styles for further beautification */
+    border-bottom: 1px solid #ccc; 
+    color: #333;
+}
+
+.centered-text span {  /* Target elements wrapped in <span> within .centered-text */
+    font-style: italic;  /* Make the text italic */
+    color: #0d25c5;        /* Set a custom color (optional) */
+}
+
+.question {
+    font-style: italic;
+  }
+  
+  
+  

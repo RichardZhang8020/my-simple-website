@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 
-function CompoundInterest(){
+const CompoundInterest = () => {
   const svgRef = useRef();
   const [principal, setPrincipal] = useState(10000);
   const [interestRate, setInterestRate] = useState(5);

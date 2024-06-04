@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import CompoundInterest from './pages/CompoundInterest';
 import Navbar from './components/Navbar';
+import Honesty from './pages/Blog/Honesty';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/compoundInterest" element={<CompoundInterest />} />
+        <Route path="/blog/honesty" element={<Honesty />} />
       </Routes>
     </Router>
   );
