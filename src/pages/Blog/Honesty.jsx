@@ -81,11 +81,11 @@ const Honesty = () => {
         <p>
         Lying to your child only degrades the trust she has for you. It also messes with their understanding of reality believing that
         a person can travel across the world in a single night while breaking into every person's house to leave presents and eat cookies.
-        Saying that Santa isn't real is no different from saying that faeries and mermaids aren't real. 
+        Saying that Santa isn't real is no different than saying that faeries and mermaids aren't real. 
         </p>
 
         <p className="question">
-        "My mom asks me whether or not I like the food she cooked? Do I lie and say I liked it?"
+        "My mom asks me whether or not I like the food she cooked? Do say I liked it even though I didn't?"
         </p>
         <p>
         Lying to your mom degrades the trust in your relationship with her. Even if you think she would get offended, it's her 
@@ -93,7 +93,7 @@ const Honesty = () => {
         of knowing what people really think of her cooking. 
         On top of that, lying could make the problem even worse. For example, 
         she might keep on cooking the same meal because she thinks you like it, in which case you would have to tell her the truth anyways. 
-        She might even believe that her cooking is good enough to be on a cooking show, only to find herself getting harshly criticized publicly
+        She might even believe that her cooking is good enough to be on a cooking show, only to find herself harshly publicly criticized 
         in front of some honest judges!
         </p>
 
