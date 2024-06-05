@@ -8,6 +8,8 @@ import Blog from './pages/Blog';
 import CompoundInterest from './pages/CompoundInterest';
 import Navbar from './components/Navbar';
 import Honesty from './pages/Blog/Honesty';
+import UsPopulation from './USPopulation';
+import StatePopulation from './StatePopulation';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/compoundInterest" element={<CompoundInterest />} />
         <Route path="/blog/honesty" element={<Honesty />} />
+        <Route path="/USPopulation" element={<UsPopulation />} />
+        <Route path="/StatePopulation" element={<StatePopulation />} />
       </Routes>
     </Router>
   );

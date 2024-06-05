@@ -73,40 +73,18 @@ const CompoundInterest = () => {
       .attr('width', xScale.bandwidth())
       .attr('height', (d) => height - yScale(d.amount))
       .on('mouseover', function (event, d) {
-        // Display tooltip on hover
         d3.select(this)
-          .attr('fill', 'orange'); // Highlight bar on hover
+          .attr('fill', 'orange');
         tooltip.style("opacity", 1);
         tooltip.html(`Amount: ${d.amount.toLocaleString()}`)
           .style("left", (event.pageX + 5) + "px")
           .style("top", (event.pageY) + "px");
-        
-        // const tooltip = d3.select('body')
-        //   .append('div')
-        //   .style('position', 'absolute')
-        //   .style('z-index', '10')
-        //   .style('visibility', 'visible')
-        //   .style('background', 'white')
-        //   .style('border', '1px solid black')
-        //   .style('padding', '5px')
-        //   .text(`Year: ${d.year}, Amount: ${d.amount.toFixed(2)}`);
-
-        // const xPos = parseFloat(d3.select(this).attr('x')) + margin.left;
-        // const yPos = parseFloat(d3.select(this).attr('y')) + height - margin.bottom;
-        // tooltip.style('left', xPos + 'px')
-        //   .style('top', yPos + 'px');
       })
       .on("mouseout", function () {
         tooltip.style("opacity", 0);
         d3.select(this)
-          .attr('fill', 'black'); // Highlight bar on hover
+          .attr('fill', 'black');
       }); 
-      // .on('mouseout', function () {
-      //   // Hide tooltip on mouseout
-      //   d3.select('body').select('div').remove();
-      //   d3.select(this).attr('fill', 'steelblue'); // Change bar color back after hover
-      // });
-
   }, [data]); 
 
   return (
