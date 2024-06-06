@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import CompoundInterest from './pages/CompoundInterest';
 import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 import Honesty from './pages/Blog/Honesty';
 import UsPopulation from './USPopulation';
 import StatePopulation from './StatePopulation';
@@ -15,7 +16,7 @@ import Debugging from './Debugging';
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>  
-      <Navbar />        
+      <Navbar2 />        
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/math" element={<Math />} />
