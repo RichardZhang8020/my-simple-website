@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Honesty from './pages/Blog/Honesty';
 import UsPopulation from './USPopulation';
 import StatePopulation from './StatePopulation';
+import Debugging from './Debugging';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/blog/honesty" element={<Honesty />} />
         <Route path="/USPopulation" element={<UsPopulation />} />
         <Route path="/StatePopulation" element={<StatePopulation />} />
+        <Route path="/debugging" element={<Debugging />} />
       </Routes>
     </Router>
   );
