@@ -1,0 +1,13 @@
+/*none of this shit works*/
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    background-color: yellow;
+  }
+  
+.card-link:hover {
+background-color: #a11414; /* or any other hover background color you prefer */
+cursor: pointer; /* this will change the cursor shape to a pointing hand */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional */
+}

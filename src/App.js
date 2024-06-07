@@ -6,6 +6,9 @@ import Algorithms from './pages/Algorithms';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import CompoundInterest from './pages/CompoundInterest';
+import Philosophy from './pages/Philosophy';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
 import Honesty from './pages/Blog/Honesty';
@@ -28,6 +31,10 @@ function App() {
         <Route path="/USPopulation" element={<UsPopulation />} />
         <Route path="/StatePopulation" element={<StatePopulation />} />
         <Route path="/debugging" element={<Debugging />} />
+        <Route path="/philosophy" element={<Philosophy />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
     </Router>
   );

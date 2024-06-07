@@ -4,10 +4,11 @@ import '../../css/blog.css'
 const Honesty = () => {
   return (
     <div className='post'>
-        <h1>The Case for Radical Honesty</h1>
+        <h1>The Case for Radical Honesty  CHANGE THIS TO BE MORE PERSONAL. USE 'I'</h1>
         <p className='date'>June 3rd 2024</p>
         
         <p>
+        
         Being honest is more important than any other aspect of a person. It's more important than being smart, hard-working or talented. 
         Yet everywhere you go, you encounter people that don't grasp it's importance. They say things they don't mean
         in order to protect other people's feelings. They say lies in order to shield innocent people from truths they cannot handle.
