@@ -1,7 +1,4 @@
-/* div { */
-    /* background-color: #3c3737; Light grey background color */
-/* } */
-
-h1 {
-    text-align: center; /* Center the text horizontally */
+.text{
+    text-align: center;
+    margin-top: 20px;
 }

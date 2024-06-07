@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import compoundInterest from '../images/compoundInterest.png'
 import { Link } from 'react-router-dom';

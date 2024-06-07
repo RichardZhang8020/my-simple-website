@@ -1,13 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Honesty from './Blog/Honesty';
-
+import '../css/about.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import HonestyCard from '../components/HonestyCard';
 
 const AboutPage = () => {
   return (
-    <div>
-      <Honesty/>
-    </div>
+    <Container>
+      <Row className='px-4 my-5'>
+        <Col sm={6}><HonestyCard/></Col>
+        {/* <Col sm={6}>hi</Col> */}
+      </Row>
+    </Container>
   );
 }
 
