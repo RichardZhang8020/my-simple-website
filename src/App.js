@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
 import Footer from './components/Footer';
-import Honesty from './pages/Blog/Honesty';
+import Honesty2 from './pages/Blog/Honesty2';
 import UsPopulation from './USPopulation';
 import StatePopulation from './StatePopulation';
 import Debugging from './Debugging';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/compoundInterest" element={<CompoundInterest />} />
-        <Route path="/blog/honesty" element={<Honesty />} />
+        <Route path="/blog/honesty2" element={<Honesty2 />} />
         <Route path="/USPopulation" element={<UsPopulation />} />
         <Route path="/StatePopulation" element={<StatePopulation />} />
         <Route path="/debugging" element={<Debugging />} />

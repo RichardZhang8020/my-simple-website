@@ -4,7 +4,7 @@ import Aristotle from '../images/Aristotle.png'
 
 function HonestyCard() {
     return (
-      <Link to="/blog/honesty" style={{ textDecoration: 'none' }} className="card-link">
+      <Link to="/blog/honesty2" style={{ textDecoration: 'none' }} className="card-link">
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={Aristotle} />
           <Card.Body>
