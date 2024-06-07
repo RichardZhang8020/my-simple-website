@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-simple-website/static/css/main.f615bdd5.css",
-    "main.js": "/my-simple-website/static/js/main.8fdc203a.js",
+    "main.css": "/my-simple-website/static/css/main.14fc8355.css",
+    "main.js": "/my-simple-website/static/js/main.83a80b52.js",
     "static/js/453.7c64d05b.chunk.js": "/my-simple-website/static/js/453.7c64d05b.chunk.js",
     "static/media/lawOfLargeNumbers.png": "/my-simple-website/static/media/lawOfLargeNumbers.9d97a3bc55fc99301446.png",
     "static/media/compoundInterest.png": "/my-simple-website/static/media/compoundInterest.becd19e10e7e255d492f.png",
     "index.html": "/my-simple-website/index.html",
-    "main.f615bdd5.css.map": "/my-simple-website/static/css/main.f615bdd5.css.map",
-    "main.8fdc203a.js.map": "/my-simple-website/static/js/main.8fdc203a.js.map",
+    "main.14fc8355.css.map": "/my-simple-website/static/css/main.14fc8355.css.map",
+    "main.83a80b52.js.map": "/my-simple-website/static/js/main.83a80b52.js.map",
     "453.7c64d05b.chunk.js.map": "/my-simple-website/static/js/453.7c64d05b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f615bdd5.css",
-    "static/js/main.8fdc203a.js"
+    "static/css/main.14fc8355.css",
+    "static/js/main.83a80b52.js"
   ]
 }
