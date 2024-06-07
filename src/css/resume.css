@@ -24,3 +24,9 @@
     display: flex;
     justify-content: center;
 }
+
+.btn {
+    position: absolute;
+    top: 80px; /* Adjust spacing as needed */
+    right: 30px; /* Adjust spacing as needed */
+}

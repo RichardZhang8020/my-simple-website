@@ -11,6 +11,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
+import Footer from './components/Footer';
 import Honesty from './pages/Blog/Honesty';
 import UsPopulation from './USPopulation';
 import StatePopulation from './StatePopulation';
@@ -34,8 +35,8 @@ function App() {
         <Route path="/philosophy" element={<Philosophy />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
-
       </Routes>
+      {/* <Footer/> */}
     </Router>
   );
 }

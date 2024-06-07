@@ -40,6 +40,7 @@ function Resume() {
       <ul>
         <li>Taught programming classes for children ages 8-16 in Visual Basic and Java</li>
       </ul>
+      <a className='btn btn-success' href='Richard_Zhang_Resume.pdf' download='Richard_Zhang_Resume.pdf'>Download Resume</a>
     </div>
   );
 }

@@ -1,0 +1,5 @@
+.footer {
+    width: 100%;  /* Stretch to full width */
+    height: 5px;  /* Set the height of the footer bar */
+    background-color: black;
+}
