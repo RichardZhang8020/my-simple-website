@@ -1,0 +1,50 @@
+.contact {
+    /* Style the contact form container here */
+    /* For example: */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact h1 {
+    /* Style the heading here */
+    /* For example: */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    /* Style the form groups here */
+    /* For example: */
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    /* Style the form labels here */
+    /* For example: */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    /* Style the form inputs and textarea here */
+    /* For example: */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact button {
+    /* Style the submit button here */
+    /* For example: */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 
+  }  
