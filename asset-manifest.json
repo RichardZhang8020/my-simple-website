@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/my-simple-website/static/css/main.e6b6e91d.css",
-    "main.js": "/my-simple-website/static/js/main.9b5f4ae2.js",
+    "main.css": "/my-simple-website/static/css/main.0e4b7503.css",
+    "main.js": "/my-simple-website/static/js/main.cd3b8db8.js",
     "static/js/453.7c64d05b.chunk.js": "/my-simple-website/static/js/453.7c64d05b.chunk.js",
+    "static/media/Aristotle.png": "/my-simple-website/static/media/Aristotle.477c79b1d65a6f128f4d.png",
     "static/media/lawOfLargeNumbers.png": "/my-simple-website/static/media/lawOfLargeNumbers.9d97a3bc55fc99301446.png",
     "static/media/compoundInterest.png": "/my-simple-website/static/media/compoundInterest.becd19e10e7e255d492f.png",
     "index.html": "/my-simple-website/index.html",
-    "main.e6b6e91d.css.map": "/my-simple-website/static/css/main.e6b6e91d.css.map",
-    "main.9b5f4ae2.js.map": "/my-simple-website/static/js/main.9b5f4ae2.js.map",
+    "main.0e4b7503.css.map": "/my-simple-website/static/css/main.0e4b7503.css.map",
+    "main.cd3b8db8.js.map": "/my-simple-website/static/js/main.cd3b8db8.js.map",
     "453.7c64d05b.chunk.js.map": "/my-simple-website/static/js/453.7c64d05b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6b6e91d.css",
-    "static/js/main.9b5f4ae2.js"
+    "static/css/main.0e4b7503.css",
+    "static/js/main.cd3b8db8.js"
   ]
 }
