@@ -8,6 +8,7 @@ import HonestyCard from '../components/HonestyCard';
 const AboutPage = () => {
   return (
     <Container>
+      <h1>My Personal Philosophy</h1>
       <Row className='px-4 my-5'>
         <Col sm={6}><HonestyCard/></Col>
         {/* <Col sm={6}>hi</Col> */}

@@ -12,11 +12,6 @@ function Projects() {
         <Col sm={6}><Project/></Col>
         <Col sm={6}><Project2/></Col>
       </Row>
-      <Row>
-        <Col sm>sm=true</Col>
-        <Col sm>sm=true</Col>
-        <Col sm>sm=true</Col>
-      </Row>
     </Container>
   );
 }

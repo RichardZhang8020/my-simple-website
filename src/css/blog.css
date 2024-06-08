@@ -6,8 +6,8 @@
 }
 
 h1 {
-    margin-bottom: 0px; /* Reduce bottom margin */
-    padding-bottom: 0px; /* Reduce bottom padding */
+    margin-top: 20px;
+    text-align: center;
 }
 
 .date{
@@ -42,5 +42,6 @@ blockquote {
     font-style: italic;
   }
   
+
   
   

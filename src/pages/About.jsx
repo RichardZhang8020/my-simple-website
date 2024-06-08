@@ -7,9 +7,9 @@ function AboutPage() {
   return (
     <div>
       <Projects/>
-      <Link to="/USPopulation">US Population</Link>
+      {/* <Link to="/USPopulation">US Population</Link>
       <Link to="/StatePopulation">State Population</Link>
-      <Link to="/debugging">Debugging</Link>
+      <Link to="/debugging">Debugging</Link> */}
     </div>
   );
 }
